@@ -1,65 +1,78 @@
-.sidebar{
-    position:fixed;
-    top:70px;
-    left:0;
+:root{
+    --navy:#0b1f3a;
+    --cream:#f6f1e6;
+}
 
-    height:calc(100vh - 70px);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    display:flex;
+body{
+    font-family: sans-serif;
 
-    background:#fde2e4;
-
-    overflow:hidden;
+    background: var(--cream);
+    color: var(--navy);
 
     transition:0.3s;
 }
 
-/* アイコン側（細いバー） */
-.iconBar{
-    width:60px;
+/* HEADER */
+.header{
     display:flex;
-    justify-content:center;
-    padding-top:20px;
+    align-items:center;
+    justify-content:space-between;
 
-    border-right:1px solid #e6a6c0;
+    padding:20px 40px;
+
+    background: var(--cream);
+    border-bottom:1px solid #ddd;
+
+    position:sticky;
+    top:0;
 }
 
-#toggleBtn{
+/* ロゴ */
+.logo{
+    font-weight:bold;
+}
+
+/* ナビ（ヘッダー横） */
+.nav{
+    display:flex;
+    gap:20px;
+}
+
+.nav a{
+    text-decoration:none;
+    color: var(--navy);
+    font-weight:500;
+}
+
+.nav a:hover{
+    opacity:0.6;
+}
+
+/* ボタン */
+#themeToggle{
     background:none;
     border:none;
-    font-size:24px;
+    font-size:20px;
     cursor:pointer;
+    color: var(--navy);
 }
 
-/* メニュー部分（最初は隠す） */
-.menuPanel{
-    width:0;
-    overflow:hidden;
-    transition:0.3s;
-    padding:20px 0;
+/* HERO */
+.hero{
+    padding:80px 40px;
 }
 
-/* 開いた状態 */
-.sidebar.open .menuPanel{
-    width:200px;
-    padding:20px;
+.hero h1{
+    font-size:3rem;
 }
 
-/* 中身 */
-.menuPanel h2{
-    margin-bottom:20px;
-    font-size:16px;
-}
-
-.menuPanel ul{
-    list-style:none;
-}
-
-.menuPanel li{
-    margin-bottom:15px;
-}
-
-.menuPanel a{
-    text-decoration:none;
-    color:#333;
+.hero p{
+    margin-top:10px;
+    opacity:0.7;
 }
