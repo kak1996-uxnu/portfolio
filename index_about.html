@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>けいちゃん</title>
+
+<style>
+body {
+    background-color: #FFFDD0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    text-align: center; /* ← 全体中央 */
+}
+
+h1 {
+    color: skyblue;
+}
+
+/* 点滅 */
+.blink {
+    animation: blink 5s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* タップ項目 */
+.item {
+    background-color: #E0F7FA;
+    width: 300px;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* ボタン */
+.btn {
+    background-color: skyblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="blink">けいちゃんのホームページ</h1><br><br>
+
+<div class="item" onclick="toggle('profile')">
+    😎 自己紹介
+    <div id="profile" class="content">
+        今、おうちでHPを作ってみたよよよん
+    </div>
+</div>
+<br>
+<div class="item" onclick="toggle('hobby')">
+    🧸 趣味
+    <div id="hobby" class="content">
+        スンスンを嗜むこと
+    </div>
+</div>
+<br>
+<div class="item" onclick="toggle('food')">
+    🐅 好きな食べ物
+    <div id="food" class="content">
+        高いお肉
+    </div>
+</div>
+<br>
+<div class="item" onclick="toggle('books')">
+    📚 好きな本
+    <div id="books" class="content">
+        谷川俊太郎のからだに従う
+    </div>
+</div>
+<br>
+
+
+
+<br>
+
+
+<button class="btn">クリックするとオレンジ色なるよ！</button>
+
+<script>
+function toggle(id) {
+    const element = document.getElementById(id);
+
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
+
