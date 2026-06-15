@@ -1,24 +1,10 @@
 :root{
-    --navy:#0b1f3a;
-    --cream:#f6f1e6;
+    --navy:#213b69;
+    --cream:#f3eee3;
+    --header:#c7dceb;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 
-body{
-    font-family: sans-serif;
-
-    background: var(--cream);
-    color: var(--navy);
-
-    transition:0.3s;
-}
-
-/* HEADER */
 .header{
     display:flex;
     align-items:center;
@@ -26,71 +12,84 @@ body{
 
     padding:20px 40px;
 
-    background: var(--cream);
-    border-bottom:1px solid #ddd;
+    background: var(--header);
+    border-bottom:1px solid #a7bfd1;
 
     position:sticky;
     top:0;
+    z-index:100;
 }
 
-/* ロゴ */
-.logo{
-    font-weight:bold;
+body{
+    font-family:'Bree Serif', serif;
+    background:var(--cream);
+    color:var(--navy);
 }
 
-/* ナビ（ヘッダー横） */
-.nav{
-    display:flex;
-    gap:20px;
-}
-
-.nav a{
-    text-decoration:none;
-    color: var(--navy);
-    font-weight:500;
-}
-
-.nav a:hover{
-    opacity:0.6;
-}
-
-/* ボタン */
-#themeToggle{
-    background:none;
-    border:none;
-    font-size:20px;
-    cursor:pointer;
-    color: var(--navy);
-}
-
-/* HERO */
-.hero{
-    padding:80px 40px;
-}
-
-.hero h1{
-    font-size:3rem;
+h1,h2,.logo,.nav a{
+    color:var(--navy);
+    font-weight:700;
+    letter-spacing:1px;
 }
 
 .hero p{
-    margin-top:10px;
-    opacity:0.7;
-}
-
-.hero p{
-    color:#0b0781;
+    color:var(--navy);
+    opacity:0.8;
 }
 
 .grid{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:30px;
-
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;
     padding:40px;
-} 
+}
 
 @media(max-width:768px){
     .grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
+        gap:15px;
+        padding:20px;
     }
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.card{
+    background:#fffdf8;
+    padding:15px;
+    border-radius:20px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,.08);
+}
+
+@media(max-width:768px){
+
+    .hero{
+        padding:50px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .nav{
+        gap:10px;
+    }
+
+    .header{
+        padding:15px 20px;
+    }
+}
+
+body{
+    background:#c8c7a1;
+    --navy:#213b69;
+    --header:#c7dceb;
+
 }
