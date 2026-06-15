@@ -57,11 +57,12 @@ header{
 
 /* SIDEBAR */
 .sidebar{
-    width:260px;
+    width:50px;
 
     min-height:100vh;
 
-    background: var(--brown);
+    background: #fde2e4;
+
     color:white;
 
     padding:50px 30px;
