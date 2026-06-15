@@ -1,175 +1,65 @@
-:root{
-    --navy:#0b1f3a;
-    --cream:#f6f1e6;
-    --brown:#7a4e2d;
-    --blue:#cfe9f6;
-    --text:#111;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
-    background: var(--blue);
-    color: var(--text);
-}
-
-/* HEADER */
-header{
-    height:70px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:0 40px;
-
-    background: var(--navy);
-    color: white;
-
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.logo{
-    font-weight:700;
-    letter-spacing:2px;
-}
-
-#themeToggle{
-    background:none;
-    border:none;
-    font-size:22px;
-    cursor:pointer;
-    color:white;
-}
-
-/* LAYOUT */
-.layout{
-    display:flex;
-}
-
-/* SIDEBAR */
 .sidebar{
-    width:50px;
-
-    min-height:100vh;
-
-    background: #fde2e4;
-
-    color:white;
-
-    padding:50px 30px;
-
-    position:sticky;
+    position:fixed;
     top:70px;
+    left:0;
 
-    border-right:4px solid #4a2f1c;
-}
+    height:calc(100vh - 70px);
 
-.sidebar h2{
-    margin-bottom:30px;
-}
+    display:flex;
 
-.sidebar a{
-    color:#f5e9dd;
-    text-decoration:none;
-}
+    background:#fde2e4;
 
-.sidebar a:hover{
-    color:white;
-}
-
-.sidebar ul{
-    list-style:none;
-}
-
-.sidebar li{
-    margin-bottom:18px;
-}
-
-/* MAIN */
-main{
-    flex:1;
-    padding:60px;
-    background: var(--cream);
-}
-
-/* HERO */
-.hero{
-    margin-bottom:60px;
-}
-
-.hero h1{
-    font-size:3.5rem;
-    font-weight:300;
-}
-
-.hero p{
-    margin-top:10px;
-    color:#444;
-}
-
-/* GRID */
-.grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:white;
     overflow:hidden;
-    border-radius:8px;
+
     transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+/* アイコン側（細いバー） */
+.iconBar{
+    width:60px;
+    display:flex;
+    justify-content:center;
+    padding-top:20px;
+
+    border-right:1px solid #e6a6c0;
 }
 
-.card img{
-    width:100%;
-    aspect-ratio:1/1;
-    object-fit:cover;
+#toggleBtn{
+    background:none;
+    border:none;
+    font-size:24px;
+    cursor:pointer;
 }
 
-.card h2{
-    margin-top:12px;
-    font-size:1rem;
-    padding:0 10px;
+/* メニュー部分（最初は隠す） */
+.menuPanel{
+    width:0;
+    overflow:hidden;
+    transition:0.3s;
+    padding:20px 0;
 }
 
-.card p{
-    padding:0 10px 15px;
-    color:#666;
-    font-size:0.9rem;
+/* 開いた状態 */
+.sidebar.open .menuPanel{
+    width:200px;
+    padding:20px;
 }
 
-/* RESPONSIVE */
-@media(max-width:900px){
-    .layout{
-        flex-direction:column;
-    }
+/* 中身 */
+.menuPanel h2{
+    margin-bottom:20px;
+    font-size:16px;
+}
 
-    .sidebar{
-        width:100%;
-        min-height:auto;
-        border-right:none;
-        border-bottom:4px solid #4a2f1c;
-    }
+.menuPanel ul{
+    list-style:none;
+}
 
-    main{
-        padding:30px;
-    }
+.menuPanel li{
+    margin-bottom:15px;
+}
 
-    .hero h1{
-        font-size:2.5rem;
-    }
+.menuPanel a{
+    text-decoration:none;
+    color:#333;
 }
