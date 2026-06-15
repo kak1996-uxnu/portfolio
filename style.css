@@ -76,3 +76,21 @@ body{
     margin-top:10px;
     opacity:0.7;
 }
+
+.hero p{
+    color:#0b0781;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+
+    padding:40px;
+} 
+
+@media(max-width:768px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
