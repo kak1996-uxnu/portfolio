@@ -1,33 +1,17 @@
-// ===============================
-// 🌙 ダークモード
-// ===============================
+const toggleBtn = document.getElementById("themeToggle");
 
-const themeToggle = document.getElementById("themeToggle");
-
-if (localStorage.getItem("theme") === "dark") {
+if(localStorage.getItem("theme") === "dark"){
     document.body.classList.add("dark");
-    themeToggle.textContent = "☀️";
+    toggleBtn.textContent = "☀️";
 }
 
-themeToggle.addEventListener("click", () => {
+toggleBtn.addEventListener("click", () => {
 
     document.body.classList.toggle("dark");
 
     const isDark = document.body.classList.contains("dark");
 
-    themeToggle.textContent = isDark ? "☀️" : "🌙";
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
 
     localStorage.setItem("theme", isDark ? "dark" : "light");
-});
-
-
-// ===============================
-// ☰ サイドバー開閉
-// ===============================
-
-const sidebar = document.getElementById("sidebar");
-const menuBtn = document.getElementById("toggleBtn");
-
-menuBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("open");
 });
