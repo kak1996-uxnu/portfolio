@@ -52,11 +52,23 @@ h1,h2,.logo,.nav a{
     }
 }
 
+.card{
+    text-align:center;
+    padding:20px;
+    background:none;
+    box-shadow:none;
+}
+
 .card img{
-    width:100%;
-    aspect-ratio:1/1;
+    width:220px;
+    height:220px;
+
     object-fit:cover;
-    border-radius:20px;
+
+    border-radius:50%;
+
+    display:block;
+    margin:0 auto 20px;
 }
 
 .card{
@@ -88,7 +100,7 @@ h1,h2,.logo,.nav a{
 }
 
 body{
-    background:#c8c7a1;
+    background:#ede4c5;
     --navy:#213b69;
     --header:#c7dceb;
 
