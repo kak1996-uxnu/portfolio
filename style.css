@@ -9,19 +9,17 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     padding:20px 40px;
-
     background: var(--header);
     border-bottom:1px solid #a7bfd1;
-
     position:sticky;
     top:0;
     z-index:100;
 }
 
 .logo {
-    letter-spacing: 5px;
+    letter-spacing: 5px;  
+    color: #d94b4b; 
 }
 
 
@@ -29,6 +27,10 @@ body{
     font-family:'Bree Serif', serif;
     background:var(--cream);
     color:var(--navy);
+    background:#ede4c5;
+    --navy:#213b69;
+    --header:#c7dceb;
+
 }
 
 h1, h2, .logo, .nav a {
@@ -44,12 +46,7 @@ h1, h2, .logo, .nav a {
     line-height: 1.9;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:25px;
-    padding:40px;
-}
+
 
 @media(max-width:768px){
     .grid{
@@ -67,39 +64,36 @@ body{
 
 }
 .gallery{
-    display: flex;
-    flex-direction: column;
-    gap: 80px; /* 絵と絵の間の余白 */
-    padding: 60px 5%;
+    display:flex;
+    flex-direction:column;
+    gap:80px;
+    padding:60px 5%;
 }
 
 .item{
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    display:flex;
+    align-items:center;
+    gap:40px;
 }
 
 .item.reverse{
-    flex-direction: row-reverse;
+    flex-direction:row-reverse;
 }
 
 .imgBox{
-    flex: 7;
-    display: flex;
-    justify-content: center;
+    flex:7;
+    display:flex;
+    justify-content:center;
 }
 
 .imgBox img{
-    width: 100%;
-    max-width: 420px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-
-    border-radius: 50%; /* 丸 */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-} 
+    width:100%;
+    max-width:420px;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:50%;
+}
 
 .textBox{
-    flex: 3;
-    color: var(--navy);
+    flex:3;
 }
