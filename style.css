@@ -17,12 +17,6 @@
     z-index:100;
 }
 
-.logo {
-    letter-spacing: 5px;  
-    color: #d94b4b; 
-}
-
-
 body{
     font-family:'Bree Serif', serif;
     background:var(--cream);
@@ -39,6 +33,10 @@ h1, h2, .logo, .nav a {
     letter-spacing: 0.8px;
 }
 
+.logo {
+     color: #d94b4b;
+     letter-spacing: 5px; 
+}
 
 .hero p{
     font-family: "Noto Sans JP", sans-serif;
