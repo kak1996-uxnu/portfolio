@@ -27,15 +27,16 @@ body{
 
 }
 
-h1, h2, .logo, .nav a {
+h1, h2, .nav a {
     color: var(--navy);
-    font-weight: 600; 
+    font-weight: 600;
     letter-spacing: 0.8px;
 }
 
-.logo {
-     color: #d94b4b;
-     letter-spacing: 5px; 
+.logo{
+    color: #d94b4b;
+    letter-spacing: 5px;
+    color:red !important;
 }
 
 .hero p{
