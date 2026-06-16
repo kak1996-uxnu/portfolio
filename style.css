@@ -20,6 +20,11 @@
     z-index:100;
 }
 
+.logo {
+    letter-spacing: 3px;
+}
+
+
 body{
     font-family:'Bree Serif', serif;
     background:var(--cream);
