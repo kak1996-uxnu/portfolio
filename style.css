@@ -59,57 +59,47 @@ h1, h2, .logo, .nav a {
     }
 }
 
-.card{
-    background: #fff;
-    border-radius: 24px; /* かなり丸く */
-    padding: 16px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06); /* ほぼ気づかない影 */
-    transition: transform 0.3s ease;
-}
-
-.card:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.card img{
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.card{
-    background:#fffdf8;
-    padding:15px;
-    border-radius:20px;
-
-    box-shadow:
-    0 4px 12px rgba(0,0,0,.08);
-}
-
-@media(max-width:768px){
-
-    .hero{
-        padding:50px 20px;
-    }
-
-    .hero h1{
-        font-size:2rem;
-    }
-
-    .nav{
-        gap:10px;
-    }
-
-    .header{
-        padding:15px 20px;
-    }
-}
 
 body{
     background:#ede4c5;
     --navy:#213b69;
     --header:#c7dceb;
 
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* 絵と絵の間の余白 */
+    padding: 60px 5%;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.item.reverse{
+    flex-direction: row-reverse;
+}
+
+.imgBox{
+    flex: 7;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img{
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    border-radius: 50%; /* 丸 */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+} 
+
+.textBox{
+    flex: 3;
+    color: var(--navy);
 }
