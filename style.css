@@ -67,6 +67,8 @@ h1,h2,.logo,.nav a{
 .card img{
     width: 220px;
     height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .card{
