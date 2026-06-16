@@ -31,15 +31,17 @@ body{
     color:var(--navy);
 }
 
-h1,h2,.logo,.nav a{
-    color:var(--navy);
-    font-weight:700;
-    letter-spacing:1px;
+h1, h2, .logo, .nav a {
+    color: var(--navy);
+    font-weight: 600; 
+    letter-spacing: 0.8px;
 }
 
+
 .hero p{
-    color:var(--navy);
-    opacity:0.8;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+    line-height: 1.9;
 }
 
 .grid{
@@ -58,10 +60,16 @@ h1,h2,.logo,.nav a{
 }
 
 .card{
-    text-align:center;
-    padding:20px;
-    background:none;
-    box-shadow:none;
+    background: #fff;
+    border-radius: 24px; /* かなり丸く */
+    padding: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06); /* ほぼ気づかない影 */
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card img{
