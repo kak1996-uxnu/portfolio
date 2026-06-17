@@ -214,28 +214,29 @@ body{
 /* =========================
    COMPARE (ABOUT用）
 ========================= */
-
 .compare{
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    gap:60px;
-    margin-top:60px;
+    gap:50px;
+
+    max-width:900px;
+    margin:60px auto 0;
 }
 
 .compare-item{
-    text-align:center;
     flex:1;
-    min-width:0;
+    text-align:center;
 }
 
 .compare-item img{
     width:100%;
-    max-width:280px;
+    max-width:260px;  /* ←ここが重要（小さく統一） */
     height:auto;
 
     border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.06);
+    object-fit:cover;
 }
 
 .compare-item p{
@@ -296,8 +297,16 @@ body{
         height:170px;
     }
 
+    @media(max-width:768px){
+
     .compare{
         flex-direction:column;
         gap:40px;
+        align-items:center;
     }
+
+    .compare-item img{
+        max-width:240px;
+    }
+}
 }
