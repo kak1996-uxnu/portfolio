@@ -1,0 +1,314 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#faf8f5;
+    color:#333;
+    font-family:
+    "Yu Gothic",
+    "Hiragino Sans",
+    sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 8%;
+
+    background:#faf8f5;
+}
+
+.logo a{
+    text-decoration:none;
+    color:#333;
+
+    font-family:'Bree Serif', serif;
+    font-size:1.5rem;
+}
+
+.nav{
+    display:flex;
+    gap:30px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#555;
+
+    transition:.3s;
+}
+
+.nav a:hover{
+    color:#000;
+}
+
+.nav a.active{
+    color:#d94a4a;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    text-align:center;
+
+    padding:120px 20px 80px;
+}
+
+.hero h1{
+    font-family:'Bree Serif', serif;
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#666;
+    line-height:2;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    max-width:800px;
+
+    margin:100px auto;
+
+    padding:0 30px;
+
+    text-align:center;
+}
+
+.about-image{
+    margin-bottom:40px;
+}
+
+.about-image img{
+    width:220px;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    display:block;
+    margin:0 auto;
+}
+
+.about-text h2{
+    font-family:'Bree Serif', serif;
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+}
+
+.about-text p{
+    color:#666;
+
+    line-height:2.2;
+
+    margin-bottom:18px;
+}
+
+/* =========================
+   DRAWING JOURNEY
+========================= */
+
+.journey{
+    max-width:1200px;
+
+    margin:140px auto;
+
+    padding:0 30px;
+}
+
+.section-title{
+    text-align:center;
+
+    margin-bottom:80px;
+}
+
+.section-title h1{
+    font-family:'Bree Serif', serif;
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+}
+
+.section-title p{
+    color:#666;
+
+    line-height:2;
+}
+
+.section-title::after{
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:1px;
+
+    background:#ccc;
+
+    margin:30px auto 0;
+}
+
+.journey-content{
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:50px;
+}
+
+.drawing-card{
+    width:420px;
+
+    text-align:center;
+}
+
+.year{
+    display:block;
+
+    margin-bottom:15px;
+
+    letter-spacing:4px;
+
+    color:#999;
+}
+
+.drawing-card img{
+    width:100%;
+
+    border-radius:12px;
+
+    display:block;
+}
+
+.drawing-card h2{
+    margin-top:25px;
+    margin-bottom:15px;
+
+    color:#333;
+}
+
+.drawing-card p{
+    color:#666;
+
+    line-height:2;
+}
+
+.arrow{
+    font-size:3rem;
+    color:#aaa;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message{
+    max-width:800px;
+
+    margin:140px auto;
+
+    padding:0 30px;
+
+    text-align:center;
+}
+
+.message h1{
+    font-family:'Bree Serif', serif;
+
+    font-size:3rem;
+
+    margin-bottom:40px;
+}
+
+.message p{
+    color:#666;
+
+    line-height:2.2;
+
+    margin-bottom:20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        padding:80px 20px 50px;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .about{
+        margin:80px auto;
+    }
+
+    .about-image img{
+        width:170px;
+        height:170px;
+    }
+
+    .about-text h2{
+        font-size:1.7rem;
+    }
+
+    .section-title h1,
+    .message h1{
+        font-size:2.2rem;
+    }
+
+    .journey-content{
+        flex-direction:column;
+    }
+
+    .drawing-card{
+        width:100%;
+    }
+
+    .arrow{
+        transform:rotate(90deg);
+        font-size:2rem;
+    }
+
+}
+
