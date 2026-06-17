@@ -319,3 +319,23 @@ body{
         max-width:240px;
     }
 }
+.compare{
+    display:flex !important;
+    flex-direction:row !important;
+    justify-content:center;
+    align-items:flex-start;
+    gap:50px;
+}
+
+.compare-item{
+    width:100%;
+    text-align:center;
+}
+
+.compare-item img{
+    max-width:260px;
+    width:100%;
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
