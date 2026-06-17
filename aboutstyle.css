@@ -194,3 +194,24 @@ body{
         height:170px;
     }
 }
+.compare{
+    display:flex !important;
+    flex-direction:row !important;
+    justify-content:center !important;
+    align-items:flex-start !important;
+    gap:50px !important;
+    flex-wrap:nowrap !important;
+}
+
+.compare-item{
+    flex:1 1 0;
+    text-align:center;
+}
+
+.compare-item img{
+    width:100%;
+    max-width:260px;
+    display:block;
+    margin:0 auto;
+}
+
