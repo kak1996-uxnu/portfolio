@@ -1,0 +1,163 @@
+/* ====================
+   ABOUT
+==================== */
+
+.about{
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.about-image{
+    margin-bottom: 40px;
+}
+
+.about-image img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+.about-text h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+
+    font-family: 'Bree Serif', serif;
+    color: #333;
+}
+
+.about-text p{
+    line-height: 2.2;
+    color: #666;
+    margin-bottom: 18px;
+    font-size: 1rem;
+}
+/* ====================
+   DRAWING JOURNEY
+==================== */
+
+.journey{
+    max-width: 1200px;
+    margin: 140px auto;
+    padding: 0 30px;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h1{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+.section-title p{
+    color: #666;
+    line-height: 2;
+}
+
+.journey-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.drawing-card{
+    width: 420px;
+    text-align: center;
+}
+
+.year{
+    display: block;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 4px;
+    color: #999;
+}
+
+.drawing-card img{
+    width: 100%;
+    display: block;
+
+    border-radius: 12px;
+}
+
+.drawing-card h2{
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    color: #333;
+}
+
+.drawing-card p{
+    color: #666;
+    line-height: 2;
+}
+
+.arrow{
+    font-size: 3rem;
+    color: #aaa;
+}
+
+/* ====================
+   MOBILE
+==================== */
+
+@media (max-width: 768px){
+
+    .about{
+        margin: 80px auto;
+    }
+
+    .about-image img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .about-text h2{
+        font-size: 1.8rem;
+    }
+
+    .section-title h1,
+    .message h1{
+        font-size: 2.2rem;
+    }
+
+    .journey-content{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .drawing-card{
+        width: 100%;
+    }
+
+    .arrow{
+        transform: rotate(90deg);
+        font-size: 2rem;
+    }
+}
+.section-title::after{
+    content:"";
+
+    display:block;
+
+    width:60px;
+    height:1px;
+
+    background:#ccc;
+
+    margin:30px auto 0;
+}
