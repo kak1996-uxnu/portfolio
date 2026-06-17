@@ -220,8 +220,8 @@ body{
 .compare{
     display:flex;
     justify-content:center;
-    align-items:center;
-    gap:60px;
+    align-items:flex-start;
+    gap:50px;
 
     max-width:900px;
     margin:60px auto 0;
@@ -234,12 +234,11 @@ body{
 
 .compare-item img{
     width:100%;
-    max-width:260px;   /* ←重要：小さく固定 */
+    max-width:260px;
     height:auto;
 
     border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.06);
-    object-fit:cover;
 }
 
 .compare-item p{
@@ -258,6 +257,9 @@ body{
 /* =========================
    MESSAGE
 ========================= */
+.message span{
+    display:block;
+}
 
 .message{
     max-width:800px;
