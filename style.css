@@ -98,7 +98,7 @@ body{
 .gallery{
     display:flex;
     flex-direction:column;
-    gap:120px;
+    gap:160px;
     padding:80px 5%;
 }
 
@@ -121,7 +121,7 @@ body{
 
 .imgBox img{
     width:100%;
-    max-width:440px;
+    max-width:600px;
     aspect-ratio:1/1;
     object-fit:cover;
 

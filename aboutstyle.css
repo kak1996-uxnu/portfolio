@@ -253,3 +253,41 @@ body{
         height:170px;
     }
 }
+@media(max-width:768px){
+
+    .compare{
+        flex-direction:column;
+        gap:40px;
+    }
+
+}
+
+
+
+
+.compare{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:60px;
+
+    margin-top:60px;
+}
+
+.compare-item{
+    text-align:center;
+}
+
+.compare-item img{
+    width:100%;
+    max-width:350px;
+
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.compare-item p{
+    margin-top:15px;
+    font-family:"Noto Sans JP", sans-serif;
+    color:#5c6b7a;
+}
