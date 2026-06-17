@@ -1,9 +1,17 @@
+/* =========================
+   ROOT
+========================= */
+
 :root{
     --navy:#2a3f5f;
     --cream:#f6f1e6;
     --header:#d6e4ef;
     --accent:#d94b4b;
 }
+
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
@@ -18,7 +26,9 @@ body{
     line-height:1.8;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .header{
     display:flex;
@@ -202,6 +212,39 @@ body{
 }
 
 /* =========================
+   COMPARE (ABOUT用）
+========================= */
+
+.compare{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:60px;
+    margin-top:60px;
+}
+
+.compare-item{
+    text-align:center;
+    flex:1;
+    min-width:0;
+}
+
+.compare-item img{
+    width:100%;
+    max-width:280px;
+    height:auto;
+
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.compare-item p{
+    margin-top:15px;
+    font-family:"Noto Sans JP", sans-serif;
+    color:#5c6b7a;
+}
+
+/* =========================
    MESSAGE
 ========================= */
 
@@ -252,42 +295,9 @@ body{
         width:170px;
         height:170px;
     }
-}
-@media(max-width:768px){
 
     .compare{
         flex-direction:column;
         gap:40px;
     }
-
-}
-
-
-
-
-.compare{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    gap:60px;
-
-    margin-top:60px;
-}
-
-.compare-item{
-    text-align:center;
-}
-
-.compare-item img{
-    width:100%;
-    max-width:350px;
-
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.06);
-}
-
-.compare-item p{
-    margin-top:15px;
-    font-family:"Noto Sans JP", sans-serif;
-    color:#5c6b7a;
 }
