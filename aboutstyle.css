@@ -136,6 +136,9 @@ body{
     margin-bottom:18px;
 }
 
+.about-text span{
+    display:block;
+}
 /* =========================
    JOURNEY
 ========================= */
@@ -217,8 +220,8 @@ body{
 .compare{
     display:flex;
     justify-content:center;
-    align-items:flex-start;
-    gap:50px;
+    align-items:center;
+    gap:60px;
 
     max-width:900px;
     margin:60px auto 0;
@@ -231,7 +234,7 @@ body{
 
 .compare-item img{
     width:100%;
-    max-width:260px;  /* ←ここが重要（小さく統一） */
+    max-width:260px;   /* ←重要：小さく固定 */
     height:auto;
 
     border-radius:12px;
@@ -245,6 +248,13 @@ body{
     color:#5c6b7a;
 }
 
+/* スマホ */
+@media(max-width:768px){
+    .compare{
+        flex-direction:column;
+        gap:40px;
+    }
+}
 /* =========================
    MESSAGE
 ========================= */
