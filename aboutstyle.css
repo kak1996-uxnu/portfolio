@@ -309,8 +309,6 @@ body{
         height:170px;
     }
 
-    @media(max-width:768px){
-
     .compare{
         flex-direction:column;
         gap:40px;
@@ -320,5 +318,4 @@ body{
     .compare-item img{
         max-width:240px;
     }
-}
 }
